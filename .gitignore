@@ -1,0 +1,9 @@
+.pio
+.clang_complete
+.gcc-flags.json
+.ccls
+.cache
+.vscode
+.clangd
+.nvim.lua
+compile_commands.json
