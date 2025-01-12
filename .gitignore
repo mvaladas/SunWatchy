@@ -7,3 +7,4 @@
 .clangd
 .nvim.lua
 compile_commands.json
+.DS_Store

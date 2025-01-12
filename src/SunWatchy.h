@@ -6,6 +6,7 @@
 #include "DSEG7_Classic_Bold_25.h"
 #include "DSEG7_Classic_Regular_15.h"
 #include "DSEG7_Classic_Regular_39.h"
+#include "Roboto_Medium_10.h"
 #include "Seven_Segment10pt7b.h"
 #include "icons.h"
 #include <sunset.h>
@@ -18,18 +19,21 @@ private:
   SunSet sun;
 
 public:
-  void drawCircleSegment(int centerX, int centerY, int radius,
-                         double startAngle, double endAngle, int patter);
+  void drawCircleSegment(const int centerX, const int centerY, const int radius,
+                         const double startAngle, const double endAngle, const int patter);
   void drawWatchFace();
   void drawTwilights();
-  void drawHands();
+  void drawHourHand();
+  void drawMinuteHand();
   void drawWatchBorder();
 
   void drawTime();
   void drawDate();
   void drawSteps();
   void drawWeather();
-  void drawBattery();
+  void drawTopRight();
+
+
 };
 
 #endif

@@ -3,7 +3,8 @@
 #PATH := /usr/local/bin:$(PATH)
 
 all:
-		pio -f -c vim run
+		pio -f -c vim run --target compiledb
+		pio -f -c vim run -j 8
 
 upload: 
 		pio -f -c vim run --target upload
